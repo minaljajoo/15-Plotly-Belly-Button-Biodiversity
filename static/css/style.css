@@ -1,0 +1,111 @@
+
+/************** Start of CSS ****************/
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  width:100%;
+  padding-bottom: 130px;
+  overflow: auto;
+  background:#004466;
+  color:whitesmoke;
+
+}
+
+/* The footer is positioned at the bottom of the page */
+footer{
+  position: absolute;
+  visibility: visible;
+  
+  padding: 10px;
+  left:0;
+  bottom: -50px;
+  height:60px;
+  background-color:#0d0d0d;
+  color:#99ff33;
+  text-align: center;
+  width: 100%; 
+  border-top: 20px;  
+  border-top-color:#00ffff; 
+  border-width: 5px;
+  border-top-style: solid;    
+  }
+/* Navbar - top of the page */
+.navbar {
+  background: url("../images/bacteria_by_filterforgedotcom.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  padding: 5px;
+  margin: 0;
+
+  border-bottom: 10px;  
+  border-bottom-color: #00ffff;
+  border-width: 5px;
+  border-bottom-style: solid;  
+}
+.navbar .navbar-brand {
+  background: #c0392b;
+  overflow: visible;
+  color:#99ff33;
+  border-color: #00ffff; 
+  border-width: 8px;
+  border-style:groove;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+  background:  #1E90FF;
+  display: block;
+}
+/* Jumbotron style */
+.jumbotron { background-color:  #d9ad73;
+}
+
+/* Set all the 'h' and 'p' style */
+h1{
+  color:  #b32d00;
+  font-size: 68px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h2{
+  color: black;
+  font-style: italic;
+  font-size: 40px;
+  font: bold;
+  
+}
+p{
+  color: white;
+  
+  font: bold;
+  
+}
+h4{
+  color:whitesmoke;
+  text-align: center;
+}
+/* This CSS styles: add border- to highlight */
+
+.highlight{
+  border-color: #99ff33;
+  border-style: solid;
+  border-width: 3px;
+  
+}
+/* Plot color setting*/
+#pie, #bubble, #gauge {
+  background-color: #ffd9b3;
+  width:100%;
+  align-content: center;
+  
+}
+
+/************** End of CSS ****************/

@@ -1,0 +1,101 @@
+<!-- # Unit 15 | Assignment - Belly Button Biodiversity: Visualizations-and-Dashboards: HTML file -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- All meta tags should be first in the header-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity: Plotlyjs Example</title>
+  <!-- Bootstrap links -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!--The following uses data URI and can be used to avoid fake favicon requests:-->
+
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+  <!-- css Style Scripts-->
+  
+  <link rel="stylesheet" href="../static/css/style.css?v=11120192">
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Home <i class="fas fa-home"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+   <!-- end of Navigation -->      
+  <div class="container">
+    <div class="row">
+      <!-- jumbotron -->
+      <div class="col-md-12 jumbotron text-center highlight">
+        <img src = "../static/images/bbb_banner2.jpg">
+        <h1>Visualization Dashboard</h1>
+        <h2>Use the interactive charts below to explore the dataset</h2>
+      </div>
+    </div>
+    <!-- main body -->
+    <div class="row">
+      <!-- side selection and summary display -->
+      <div class="col-md-2">
+        <div class="well card bg-primary highlight" style="width: 11rem;">
+          <div class="card-header">
+            <h4>SELECT Sample:</h4>
+          </div>
+          <div class="card-body" style = "background: #1ab2ff;">          
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </div>
+        </div>
+       <br>
+        
+        <div class="card bg-primary highlight" style="width: 11rem;">
+          <div class="card-header">
+            <h4>Sample MetaData</h4>
+          </div>
+          <div class="card-body"  style = "background: #1ab2ff;"> 
+            <p id="sample-metadata" style ="font-size: 11px"></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class = "highlight" id="pie"></div>
+      </div>
+      <div class="col-md-5">
+        <div class = "highlight"  id="gauge"></div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+    <div class="col-md-12">
+      <div class = "highlight"  id="bubble"></div>
+    </div>
+    </div>
+  </div>
+  <!-- End of Main container-->
+  <hr>
+  
+    <!-- Footer -->
+    <footer>
+    <!-- Copyright -->
+      <p>
+        Belly Button Biodiversity: Flask Plotlyjs Example | <i class="far fa-copyright"></i> Copyright 2019: Minal Jajoo
+      </p>      
+    </footer>
+  </div>
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../static/js/app.js?v=11120192" type="text/javascript"></script>
+
+
+</body>
+
+</html>
+<!------------ End of HTML ---------------->
